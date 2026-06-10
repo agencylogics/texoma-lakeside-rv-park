@@ -5,10 +5,12 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
+import { useAuth } from "@/_core/hooks/useAuth";
+import { trpc } from "@/lib/trpc";
 import {
   Droplets, Zap, Wifi, Trash2, Car, Ruler,
   Anchor, Fish, TreePine, MapPin, Clock, Shield,
-  ChevronRight, Phone, ArrowRight
+  ChevronRight, Phone, ArrowRight, Loader2
 } from "lucide-react";
 
 function useInView(threshold = 0.15) {
@@ -28,6 +30,10 @@ function useInView(threshold = 0.15) {
 }
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   return (
     <>
       <SEOHead
@@ -537,11 +543,28 @@ function ContactSection() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const submitMutation = trpc.contact.submit.useMutation({
+    onSuccess: () => {
+      setSubmitted(true);
+      setErrorMsg("");
+    },
+    onError: (err) => {
+      setErrorMsg(err.message || "Something went wrong. Please try again or call us directly.");
+    },
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission will be wired to notifications later
-    setSubmitted(true);
+    setErrorMsg("");
+    submitMutation.mutate({
+      firstName: formState.firstName,
+      lastName: formState.lastName,
+      email: formState.email,
+      phone: formState.phone,
+      message: formState.message,
+    });
   };
 
   return (
@@ -666,11 +689,24 @@ function ContactSection() {
                     className="w-full px-4 py-3 rounded-lg border border-black/10 bg-[var(--color-cream)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--color-amber)]/50 focus:border-[var(--color-amber)] transition-all resize-none text-[var(--color-navy)]"
                   />
                 </div>
+                {errorMsg && (
+                  <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-sm">
+                    {errorMsg}
+                  </div>
+                )}
                 <button
                   type="submit"
-                  className="w-full py-4 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg text-base hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.98] shadow-lg shadow-[var(--color-amber)]/20"
+                  disabled={submitMutation.isPending}
+                  className="w-full py-4 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg text-base hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.98] shadow-lg shadow-[var(--color-amber)]/20 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {submitMutation.isPending ? (
+                    <span className="inline-flex items-center gap-2">
+                      <Loader2 size={18} className="animate-spin" />
+                      Sending...
+                    </span>
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
                 <p className="text-xs text-center text-[var(--color-navy)]/40">
                   We typically respond within a few hours during business hours.
