@@ -31,8 +31,8 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="Texoma Lakeside RV Park | Long-Term RV Sites Near Lake Texoma | Cartwright, OK"
-        description="Affordable long-term RV park in Cartwright, Oklahoma near Lake Texoma. Full hookups, oversized 33x50 pads, 20/30/50 amp service, free WiFi, and 1 mile to Burns Run West boat ramps. Monthly rates from $450. Limited spots available."
+        title="Texoma Lakeside RV Park | Lake Texoma RV Sites"
+        description="Affordable long-term RV park near Lake Texoma in Cartwright, OK. Full hookup sites from $450/month, 1 mile to Burns Run West boat ramps. Limited spots available."
         canonical="https://www.texomalakesidervpark.com"
       />
       <HeroSection />
