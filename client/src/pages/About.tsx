@@ -1,8 +1,10 @@
 /*
  * DESIGN: Rugged Americana
  * About page — park story, features, and local context
+ * Internal linking to: FAQ, Lease & Rules, Fishing Guide, Long-Term Living, Home (contact)
  */
-import { MapPin, TreePine, Users, Heart } from "lucide-react";
+import { Link } from "wouter";
+import { MapPin, TreePine, Users, Heart, ArrowRight } from "lucide-react";
 
 export default function About() {
   return (
@@ -45,10 +47,10 @@ export default function About() {
                   Texoma Lakeside RV Park was created with a simple vision: provide RV enthusiasts with an affordable, well-maintained home base to enjoy everything Lake Texoma has to offer. Located in Cartwright, Oklahoma, our park sits just one mile from Burns Run West boat ramps — one of the most popular access points on the entire lake.
                 </p>
                 <p>
-                  We specialize in long-term monthly leases because we believe in building a community of like-minded people who appreciate the outdoors, value their peace and quiet, and want easy access to world-class fishing and boating without breaking the bank.
+                  We specialize in <Link href="/long-term-rv-living-lake-texoma" className="text-[var(--color-amber)] font-semibold hover:underline">long-term monthly leases</Link> because we believe in building a community of like-minded people who appreciate the outdoors, value their peace and quiet, and want easy access to <Link href="/lake-texoma-fishing-boating-guide" className="text-[var(--color-amber)] font-semibold hover:underline">world-class fishing and boating</Link> without breaking the bank.
                 </p>
                 <p>
-                  Every site features oversized 33x50 foot pads with full hookups, giving you plenty of room to spread out and make yourself at home. Whether you're a full-time RVer, a weekend warrior, or someone looking for a seasonal retreat, Texoma Lakeside is the kind of place where you can truly relax.
+                  Every site features oversized 33x50 foot pads with full hookups, giving you plenty of room to spread out and make yourself at home. Whether you're a full-time RVer, a weekend warrior, or someone looking for a seasonal retreat, Texoma Lakeside is the kind of place where you can truly relax. Check out our <Link href="/lease-and-park-rules" className="text-[var(--color-amber)] font-semibold hover:underline">lease terms and park rules</Link> to learn more.
                 </p>
               </div>
             </div>
@@ -92,7 +94,7 @@ export default function About() {
                   Unbeatable Lake Access
                 </h3>
                 <p className="text-[var(--color-navy)]/70 leading-relaxed">
-                  At just one mile from Burns Run West, you won't find a more convenient home base for Lake Texoma. Launch your boat in the morning and be back at your site in minutes. The proximity to the lake is what sets us apart from every other park in the area.
+                  At just one mile from Burns Run West, you won't find a more convenient home base for Lake Texoma. Launch your boat in the morning and be back at your site in minutes. Read our <Link href="/lake-texoma-fishing-boating-guide" className="text-[var(--color-amber)] font-semibold hover:underline">Lake Texoma fishing and boating guide</Link> to see what's waiting for you on the water.
                 </p>
               </div>
             </div>
@@ -114,10 +116,37 @@ export default function About() {
                   Affordable Without Compromise
                 </h3>
                 <p className="text-[var(--color-navy)]/70 leading-relaxed">
-                  At $450/month plus electric, we offer some of the most competitive rates in the Lake Texoma region — and that includes WiFi, water, sewer, and trash service. No hidden fees, no surprises. Just straightforward, honest pricing.
+                  At $450/month plus electric, we offer some of the most competitive rates in the Lake Texoma region — and that includes WiFi, water, sewer, and trash service. No hidden fees, no surprises. See our <Link href="/faq" className="text-[var(--color-amber)] font-semibold hover:underline">FAQ page</Link> for more details on pricing and what's included.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links Section */}
+      <section className="py-16 bg-[var(--color-cream)]">
+        <div className="container">
+          <h2 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] text-2xl text-center mb-8">
+            Explore More
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link href="/lake-texoma-fishing-boating-guide" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+              <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+              <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Fishing & Boating Guide</span>
+            </Link>
+            <Link href="/long-term-rv-living-lake-texoma" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+              <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+              <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Long-Term RV Living</span>
+            </Link>
+            <Link href="/lease-and-park-rules" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+              <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+              <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Lease & Park Rules</span>
+            </Link>
+            <Link href="/faq" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+              <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+              <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">FAQ</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -136,6 +165,7 @@ export default function About() {
             className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.97] shadow-xl shadow-[var(--color-amber)]/25"
           >
             Contact Us Today
+            <ArrowRight size={18} />
           </a>
         </div>
       </section>

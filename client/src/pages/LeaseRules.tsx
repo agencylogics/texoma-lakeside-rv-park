@@ -1,7 +1,11 @@
 /*
  * DESIGN: Rugged Americana
  * Lease & Park Rules page
+ * Internal linking to: About, FAQ, Fishing Guide, Long-Term Living, Home (contact)
  */
+import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
+
 export default function LeaseRules() {
   return (
     <>
@@ -28,10 +32,10 @@ export default function LeaseRules() {
             </h2>
             <div className="space-y-4 text-[var(--color-navy)]/70 leading-relaxed">
               <p>
-                Texoma Lakeside RV Park offers monthly, weekly, and daily leasing options. Our primary focus is long-term monthly tenants who want to make the park their home base for enjoying Lake Texoma.
+                Texoma Lakeside RV Park offers monthly, weekly, and daily leasing options. Our primary focus is <Link href="/long-term-rv-living-lake-texoma" className="text-[var(--color-amber)] font-semibold hover:underline">long-term monthly tenants</Link> who want to make the park their home base for enjoying Lake Texoma.
               </p>
               <p>
-                To lease a site, simply call or text us at <a href="tel:9723221989" className="text-[var(--color-amber)] font-semibold hover:underline">(972) 322-1989</a> or email <a href="mailto:TexomaLakesideRVPark@gmail.com" className="text-[var(--color-amber)] font-semibold hover:underline">TexomaLakesideRVPark@gmail.com</a>. We'll discuss availability, walk you through the lease terms, and get you set up.
+                To lease a site, simply call or text us at <a href="tel:9723221989" className="text-[var(--color-amber)] font-semibold hover:underline">(972) 322-1989</a> or email <a href="mailto:TexomaLakesideRVPark@gmail.com" className="text-[var(--color-amber)] font-semibold hover:underline">TexomaLakesideRVPark@gmail.com</a>. We'll discuss availability, walk you through the lease terms, and get you set up. You can also <a href="/#contact" className="text-[var(--color-amber)] font-semibold hover:underline">fill out our contact form</a> and we'll get back to you quickly.
               </p>
               <div className="bg-[var(--color-cream)] rounded-lg p-5 mt-4">
                 <h3 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] mb-3">Rate Summary</h3>
@@ -50,11 +54,14 @@ export default function LeaseRules() {
                   </div>
                 </div>
               </div>
+              <p className="text-sm text-[var(--color-navy)]/50">
+                Have questions about what's included? Check our <Link href="/faq" className="text-[var(--color-amber)] font-semibold hover:underline">FAQ page</Link> for detailed answers about rates, amenities, and more.
+              </p>
             </div>
           </div>
 
           {/* Park Rules */}
-          <div className="bg-white rounded-xl p-8 shadow-lg border border-black/5">
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-black/5 mb-8">
             <h2 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] text-2xl mb-6 flex items-center gap-3">
               <div className="w-1.5 h-8 bg-[var(--color-forest)] rounded-full" />
               Park Rules & Guidelines
@@ -99,6 +106,31 @@ export default function LeaseRules() {
               </p>
             </div>
           </div>
+
+          {/* Internal Links */}
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-black/5">
+            <h3 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] text-xl mb-6">
+              Explore More
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/about" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">About Our Park</span>
+              </Link>
+              <Link href="/lake-texoma-fishing-boating-guide" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Fishing & Boating Guide</span>
+              </Link>
+              <Link href="/long-term-rv-living-lake-texoma" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Long-Term RV Living</span>
+              </Link>
+              <Link href="/faq" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">FAQ</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -109,14 +141,23 @@ export default function LeaseRules() {
             Ready to Lease a Site?
           </h2>
           <p className="text-white/70 mb-8">
-            Call or text us to check availability and get started.
+            Call or text us to check availability, or fill out our contact form.
           </p>
-          <a
-            href="tel:9723221989"
-            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg hover:bg-[var(--color-amber-light)] transition-all"
-          >
-            Call (972) 322-1989
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/#contact"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.97]"
+            >
+              Reserve Your Spot
+              <ArrowRight size={16} />
+            </a>
+            <a
+              href="tel:9723221989"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-[var(--font-display)] font-bold rounded-lg hover:border-white/60 transition-all"
+            >
+              Call (972) 322-1989
+            </a>
+          </div>
         </div>
       </section>
     </>

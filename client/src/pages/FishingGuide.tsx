@@ -2,6 +2,7 @@
  * DESIGN: Rugged Americana
  * Lake Texoma Fishing & Boating Guide — SEO/GEO content page
  */
+import { Link } from "wouter";
 import { Fish, Anchor, Sun, Thermometer, MapPin, ArrowRight } from "lucide-react";
 
 export default function FishingGuide() {
@@ -163,6 +164,31 @@ export default function FishingGuide() {
                 <span>Playground for families</span>
               </li>
             </ul>
+          </div>
+
+          {/* Internal Links */}
+          <div className="bg-white rounded-xl p-8 shadow-lg border border-black/5 mb-10">
+            <h3 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] text-xl mb-6">
+              Related Pages
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/long-term-rv-living-lake-texoma" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Long-Term RV Living</span>
+              </Link>
+              <Link href="/about" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">About Our Park</span>
+              </Link>
+              <Link href="/lease-and-park-rules" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Lease & Park Rules</span>
+              </Link>
+              <Link href="/faq" className="flex items-center gap-2 p-4 bg-[var(--color-cream)]/50 rounded-lg hover:bg-[var(--color-cream)] transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">FAQ</span>
+              </Link>
+            </div>
           </div>
 
           {/* Licensing Info */}

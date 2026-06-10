@@ -36,6 +36,7 @@ export default function Home() {
       <LocationSection />
       <LifestyleSection />
       <PricingSection />
+      <InternalLinksSection />
       <FAQPreview />
       <ContactSection />
     </>
@@ -90,7 +91,7 @@ function HeroSection() {
             className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-300 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
           >
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg text-base hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.97] shadow-xl shadow-[var(--color-amber)]/25"
             >
               Reserve Your Spot
@@ -335,7 +336,7 @@ function LifestyleSection() {
           Whether you're casting a line at sunrise, exploring the lake by boat, or unwinding by a campfire under the stars — life at Texoma Lakeside is the escape you've been looking for.
         </p>
         <a
-          href="#contact"
+          href="/#contact"
           className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-lg text-base hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.97] shadow-xl shadow-[var(--color-amber)]/25"
         >
           Start Your Lake Life
@@ -412,6 +413,36 @@ function PricingSection() {
         <p className="text-center text-[var(--color-navy)]/50 text-sm mt-8">
           Monthly pricing may vary based on availability. Call for current rates and specials.
         </p>
+      </div>
+    </section>
+  );
+}
+
+function InternalLinksSection() {
+  return (
+    <section className="py-16 bg-[var(--color-cream)] border-t border-black/5">
+      <div className="container">
+        <h2 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] text-2xl text-center mb-8">
+          Explore Texoma Lakeside
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <Link href="/about" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+            <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+            <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">About Our Park</span>
+          </Link>
+          <Link href="/lake-texoma-fishing-boating-guide" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+            <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+            <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Fishing & Boating Guide</span>
+          </Link>
+          <Link href="/long-term-rv-living-lake-texoma" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+            <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+            <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Long-Term RV Living</span>
+          </Link>
+          <Link href="/lease-and-park-rules" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+            <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+            <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Lease & Park Rules</span>
+          </Link>
+        </div>
       </div>
     </section>
   );

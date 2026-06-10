@@ -1,9 +1,11 @@
 /*
  * DESIGN: Rugged Americana
  * FAQ page — comprehensive questions for SEO/GEO optimization
+ * Internal linking to: About, Lease & Rules, Fishing Guide, Long-Term Living, Home (contact)
  */
 import { useState } from "react";
-import { ChevronRight } from "lucide-react";
+import { Link } from "wouter";
+import { ChevronRight, ArrowRight } from "lucide-react";
 
 const faqs = [
   {
@@ -159,6 +161,31 @@ export default function FAQ() {
               </div>
             </div>
           ))}
+
+          {/* Internal Links */}
+          <div className="mt-16 pt-12 border-t border-black/10">
+            <h3 className="font-[var(--font-display)] font-bold text-[var(--color-navy)] text-xl mb-6 text-center">
+              Learn More About Texoma Lakeside
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/about" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">About Our Park</span>
+              </Link>
+              <Link href="/lake-texoma-fishing-boating-guide" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Fishing & Boating Guide</span>
+              </Link>
+              <Link href="/long-term-rv-living-lake-texoma" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Long-Term RV Living</span>
+              </Link>
+              <Link href="/lease-and-park-rules" className="flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm border border-black/5 hover:shadow-md hover:border-[var(--color-amber)]/30 transition-all group">
+                <ArrowRight size={16} className="text-[var(--color-amber)] group-hover:translate-x-1 transition-transform" />
+                <span className="font-[var(--font-display)] font-semibold text-[var(--color-navy)] text-sm">Lease & Park Rules</span>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -183,6 +210,7 @@ export default function FAQ() {
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-[var(--font-display)] font-bold rounded-lg hover:border-white/60 transition-all"
             >
               Send a Message
+              <ArrowRight size={16} />
             </a>
           </div>
         </div>

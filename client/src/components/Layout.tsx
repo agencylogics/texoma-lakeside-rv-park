@@ -95,7 +95,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               className="ml-4 px-5 py-2.5 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-md text-sm hover:bg-[var(--color-amber-light)] transition-all active:scale-[0.97] shadow-lg shadow-[var(--color-amber)]/20"
             >
               Get A Spot Now
@@ -130,7 +130,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               ))}
               <a
-                href="#contact"
+                href="/#contact"
                 className="mt-2 mx-4 px-5 py-3 bg-[var(--color-amber)] text-[var(--color-navy)] font-[var(--font-display)] font-bold rounded-md text-sm text-center hover:bg-[var(--color-amber-light)] transition-all"
               >
                 Get A Spot Now
