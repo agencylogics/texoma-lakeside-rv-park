@@ -65,7 +65,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/manus-storage/logo_badge_1a1ddefb.png"
+              src="/manus-storage/texomaALLWHITE_f3a6f154.avif"
               alt="Texoma Lakeside RV Park"
               className="h-10 md:h-12 w-auto"
             />
@@ -151,7 +151,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src="/manus-storage/logo_badge_1a1ddefb.png"
+                  src="/manus-storage/texomaALLWHITE_f3a6f154.avif"
                   alt="Texoma Lakeside RV Park"
                   className="h-12 w-auto"
                 />
