@@ -1,6 +1,6 @@
 /*
  * DESIGN: Rugged Americana
- * FAQ page — comprehensive questions for SEO/GEO optimization
+ * FAQ page - comprehensive questions for SEO/GEO optimization
  * Internal linking to: About, Lease & Rules, Fishing Guide, Long-Term Living, Home (contact)
  */
 import { useState } from "react";
@@ -35,7 +35,7 @@ const faqs = [
     items: [
       {
         q: "How large are the RV sites?",
-        a: "Each site features an oversized 33 x 50 foot pad — significantly larger than the industry standard. This gives you plenty of room for your RV, outdoor furniture, and vehicles.",
+        a: "Each site features an oversized 33 x 50 foot pad, significantly larger than the industry standard. This gives you plenty of room for your RV, outdoor furniture, and vehicles.",
       },
       {
         q: "What hookups are available at each site?",
@@ -109,7 +109,7 @@ export default function FAQ() {
   return (
     <>
       <SEOHead
-        title="FAQ | Texoma Lakeside RV Park — Rates, Amenities & Lake Texoma Info"
+        title="FAQ | Texoma Lakeside RV Park - Rates, Amenities & Lake Texoma Info"
         description="Frequently asked questions about Texoma Lakeside RV Park in Cartwright, OK. Learn about monthly rates ($450+electric), full hookup amenities, site sizes, pet policy, and proximity to Burns Run West boat ramps on Lake Texoma."
         canonical="https://www.texomalakesidervpark.com/faq"
       />

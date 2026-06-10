@@ -1,5 +1,5 @@
 /**
- * SEO Head Component — Manages per-page title, meta description, canonical URL, and OG tags
+ * SEO Head Component - Manages per-page title, meta description, canonical URL, and OG tags
  * Uses document.head manipulation for SPA-based meta tag management
  */
 import { useEffect } from "react";

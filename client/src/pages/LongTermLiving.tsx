@@ -1,6 +1,6 @@
 /*
  * DESIGN: Rugged Americana
- * Long-Term RV Living on Lake Texoma — SEO/GEO content page
+ * Long-Term RV Living on Lake Texoma - SEO/GEO content page
  */
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
@@ -49,10 +49,10 @@ export default function LongTermLiving() {
           </h2>
           <div className="space-y-4 text-[var(--color-navy)]/70 leading-relaxed mb-12">
             <p>
-              Long-term RV living has become one of the fastest-growing lifestyle choices in America, and for good reason. It offers the freedom of mobility, lower cost of living compared to traditional housing, and the ability to live in places most people only visit on vacation. At Texoma Lakeside RV Park, you get all of that — plus the daily luxury of living just one mile from one of the best lakes in the country.
+              Long-term RV living has become one of the fastest-growing lifestyle choices in America, and for good reason. It offers the freedom of mobility, lower cost of living compared to traditional housing, and the ability to live in places most people only visit on vacation. At Texoma Lakeside RV Park, you get all of that, plus the daily luxury of living just one mile from one of the best lakes in the country.
             </p>
             <p>
-              Whether you're a retiree looking for an affordable and peaceful place to settle, a remote worker who wants to trade the city for lake views, or a fishing enthusiast who wants to be on the water every day, our park is designed for people who want to make Lake Texoma their home — not just a weekend destination.
+              Whether you're a retiree looking for an affordable and peaceful place to settle, a remote worker who wants to trade the city for lake views, or a fishing enthusiast who wants to be on the water every day, our park is designed for people who want to make Lake Texoma their home, not just a weekend destination.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export default function LongTermLiving() {
                 Unbeatable Location
               </h3>
               <p className="text-sm text-[var(--color-navy)]/70">
-                Just 1 mile from Burns Run West boat ramps on Lake Texoma, with easy highway access and shopping within 20 minutes. The best of both worlds — remote peace with nearby convenience.
+                Just 1 mile from Burns Run West boat ramps on Lake Texoma, with easy highway access and shopping within 20 minutes. The best of both worlds: remote peace with nearby convenience.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg border border-black/5">
@@ -91,7 +91,7 @@ export default function LongTermLiving() {
                 Quiet & Peaceful
               </h3>
               <p className="text-sm text-[var(--color-navy)]/70">
-                Our park prioritizes long-term residents who value peace and quiet. This isn't a rowdy campground — it's a community of people who chose this lifestyle intentionally.
+                Our park prioritizes long-term residents who value peace and quiet. This isn't a rowdy campground. It's a community of people who chose this lifestyle intentionally.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg border border-black/5">

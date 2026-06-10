@@ -1,5 +1,5 @@
 /*
- * DESIGN: Rugged Americana — Bold outdoor adventure with Southern warmth
+ * DESIGN: Rugged Americana - Bold outdoor adventure with Southern warmth
  * Deep navy, warm amber/gold accents, cream backgrounds, textured depth
  */
 import { useEffect, useRef, useState } from "react";
@@ -90,7 +90,7 @@ function HeroSection() {
           <p
             className={`text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-lg transition-all duration-700 delay-200 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
           >
-            Affordable long-term RV sites with full hookups, oversized pads, and direct access to Burns Run West boat ramps. Peace, nature, and lake life — starting at $450/month.
+            Affordable long-term RV sites with full hookups, oversized pads, and direct access to Burns Run West boat ramps. Peace, nature, and lake life starting at $450/month.
           </p>
 
           <div
@@ -123,7 +123,7 @@ function UrgencyBanner() {
       <div className="container flex items-center justify-center gap-3 text-[var(--color-navy)]">
         <div className="w-2.5 h-2.5 bg-red-600 rounded-full animate-pulse-subtle" />
         <p className="font-[var(--font-display)] font-bold text-sm md:text-base tracking-wide">
-          LIMITED AVAILABILITY — Only a Few Sites Remaining for Long-Term Lease
+          LIMITED AVAILABILITY - Only a Few Sites Remaining for Long-Term Lease
         </p>
         <div className="w-2.5 h-2.5 bg-red-600 rounded-full animate-pulse-subtle" />
       </div>
@@ -148,7 +148,7 @@ function StepsSection() {
     {
       num: "03",
       title: "Enjoy Lake Texoma",
-      desc: "Kick back and enjoy the peace of lakeside living. Fish, boat, or just relax — Burns Run West is right down the road.",
+      desc: "Kick back and enjoy the peace of lakeside living. Fish, boat, or just relax. Burns Run West is right down the road.",
     },
   ];
 
@@ -296,7 +296,7 @@ function LocationSection() {
               <span className="text-[var(--color-forest)]">Burns Run West</span>
             </h2>
             <p className="text-[var(--color-navy)]/70 text-lg leading-relaxed mb-8">
-              Nestled just a mile from Burns Run West boat ramps, Texoma Lakeside RV Park puts you at the doorstep of Lake Texoma's best fishing, boating, and outdoor recreation — while still being close to everything you need.
+              Nestled just a mile from Burns Run West boat ramps, Texoma Lakeside RV Park puts you at the doorstep of Lake Texoma's best fishing, boating, and outdoor recreation while still being close to everything you need.
             </p>
 
             <div className="space-y-3">
@@ -334,12 +334,12 @@ function LifestyleSection() {
 
       <div className="container relative z-10 text-center">
         <h2 className="font-[var(--font-display)] font-black text-white text-3xl md:text-4xl lg:text-5xl mb-6">
-          More Than a Spot —
+          More Than a Spot.
           <br />
           <span className="text-[var(--color-amber)]">It's a Lifestyle</span>
         </h2>
         <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Whether you're casting a line at sunrise, exploring the lake by boat, or unwinding by a campfire under the stars — life at Texoma Lakeside is the escape you've been looking for.
+          Whether you're casting a line at sunrise, exploring the lake by boat, or unwinding by a campfire under the stars, life at Texoma Lakeside is the escape you've been looking for.
         </p>
         <a
           href="/#contact"

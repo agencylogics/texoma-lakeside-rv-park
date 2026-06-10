@@ -1,6 +1,6 @@
 /*
  * DESIGN: Rugged Americana
- * Lake Texoma Fishing & Boating Guide — SEO/GEO content page
+ * Lake Texoma Fishing & Boating Guide - SEO/GEO content page
  */
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
@@ -36,7 +36,7 @@ export default function FishingGuide() {
             <span className="text-[var(--color-amber)]">on Lake Texoma</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Your complete guide to fishing, boating, and water recreation on one of the top lakes in the United States — right from your home base at Texoma Lakeside RV Park.
+            Your complete guide to fishing, boating, and water recreation on one of the top lakes in the United States, right from your home base at Texoma Lakeside RV Park.
           </p>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function FishingGuide() {
               Why Lake Texoma is a World-Class Fishing Destination
             </h2>
             <p className="text-[var(--color-navy)]/70 leading-relaxed mb-4">
-              Lake Texoma, straddling the Texas-Oklahoma border, is one of the largest reservoirs in the United States at over 89,000 acres. It's consistently ranked among the top bass fishing lakes in the nation and is the only inland lake where you can catch striped bass (stripers) that were naturally reproducing — a phenomenon that has made it legendary among anglers.
+              Lake Texoma, straddling the Texas-Oklahoma border, is one of the largest reservoirs in the United States at over 89,000 acres. It's consistently ranked among the top bass fishing lakes in the nation and is the only inland lake where you can catch striped bass (stripers) that were naturally reproducing, a phenomenon that has made it legendary among anglers.
             </p>
             <p className="text-[var(--color-navy)]/70 leading-relaxed mb-4">
               Located just 1 mile from Burns Run West boat ramps, Texoma Lakeside RV Park gives you unmatched proximity to some of the best fishing and boating access points on the entire lake. Whether you're a tournament angler, a weekend bass fisherman, or someone who just loves being on the water, this is your ideal home base.
@@ -113,7 +113,7 @@ export default function FishingGuide() {
                   <div className="text-xs text-[var(--color-navy)]/50">Jun - Aug</div>
                 </div>
                 <div className="flex-1 border-l-2 border-[var(--color-amber)] pl-4">
-                  <p className="text-[var(--color-navy)]/70 text-sm">Early morning and evening are best for bass. Stripers move to deeper, cooler water — trolling with downriggers is effective. Catfishing is excellent at night. Great time for swimming and water sports.</p>
+                  <p className="text-[var(--color-navy)]/70 text-sm">Early morning and evening are best for bass. Stripers move to deeper, cooler water. Trolling with downriggers is effective. Catfishing is excellent at night. Great time for swimming and water sports.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">

@@ -11,7 +11,7 @@ export default function LeaseRules() {
   return (
     <>
       <SEOHead
-        title="Lease & Park Rules | Texoma Lakeside RV Park — Cartwright, Oklahoma"
+        title="Lease & Park Rules | Texoma Lakeside RV Park - Cartwright, Oklahoma"
         description="View the lease terms and park rules for Texoma Lakeside RV Park in Cartwright, OK. Monthly lease at $450+electric, pet-friendly policy, quiet hours, and community guidelines for long-term RV living near Lake Texoma."
         canonical="https://www.texomalakesidervpark.com/lease-and-park-rules"
       />

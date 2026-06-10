@@ -1,6 +1,6 @@
 /*
  * DESIGN: Rugged Americana
- * About page — park story, features, and local context
+ * About page - park story, features, and local context
  * Internal linking to: FAQ, Lease & Rules, Fishing Guide, Long-Term Living, Home (contact)
  */
 import { Link } from "wouter";
@@ -52,7 +52,7 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-[var(--color-navy)]/70 leading-relaxed">
                 <p>
-                  Texoma Lakeside RV Park was created with a simple vision: provide RV enthusiasts with an affordable, well-maintained home base to enjoy everything Lake Texoma has to offer. Located in Cartwright, Oklahoma, our park sits just one mile from Burns Run West boat ramps — one of the most popular access points on the entire lake.
+                  Texoma Lakeside RV Park was created with a simple vision: provide RV enthusiasts with an affordable, well-maintained home base to enjoy everything Lake Texoma has to offer. Located in Cartwright, Oklahoma, our park sits just one mile from Burns Run West boat ramps, one of the most popular access points on the entire lake.
                 </p>
                 <p>
                   We specialize in <Link href="/long-term-rv-living-lake-texoma" className="text-[var(--color-amber)] font-semibold hover:underline">long-term monthly leases</Link> because we believe in building a community of like-minded people who appreciate the outdoors, value their peace and quiet, and want easy access to <Link href="/lake-texoma-fishing-boating-guide" className="text-[var(--color-amber)] font-semibold hover:underline">world-class fishing and boating</Link> without breaking the bank.
@@ -124,7 +124,7 @@ export default function About() {
                   Affordable Without Compromise
                 </h3>
                 <p className="text-[var(--color-navy)]/70 leading-relaxed">
-                  At $450/month plus electric, we offer some of the most competitive rates in the Lake Texoma region — and that includes WiFi, water, sewer, and trash service. No hidden fees, no surprises. See our <Link href="/faq" className="text-[var(--color-amber)] font-semibold hover:underline">FAQ page</Link> for more details on pricing and what's included.
+                  At $450/month plus electric, we offer some of the most competitive rates in the Lake Texoma region, and that includes WiFi, water, sewer, and trash service. No hidden fees, no surprises. See our <Link href="/faq" className="text-[var(--color-amber)] font-semibold hover:underline">FAQ page</Link> for more details on pricing and what's included.
                 </p>
               </div>
             </div>
