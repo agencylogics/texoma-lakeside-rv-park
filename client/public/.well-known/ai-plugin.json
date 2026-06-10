@@ -1,0 +1,10 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Texoma Lakeside RV Park",
+  "name_for_model": "texoma_lakeside_rv_park",
+  "description_for_human": "Affordable long-term RV park in Cartwright, Oklahoma near Lake Texoma with full hookups and boat ramp access.",
+  "description_for_model": "Texoma Lakeside RV Park is a family-owned RV community in Cartwright, Oklahoma (Bryan County) offering affordable long-term monthly RV site leases near Lake Texoma. Features oversized 33x50 foot pads with full hookups (water, sewer, 20/30/50 amp electric), free WiFi, trash service. Located 1 mile from Burns Run West boat ramps. Monthly rates from $450 plus electric. Limited availability.",
+  "auth": { "type": "none" },
+  "contact_email": "TexomaLakesideRVPark@gmail.com",
+  "legal_info_url": "https://www.texomalakesidervpark.com/lease-and-park-rules"
+}

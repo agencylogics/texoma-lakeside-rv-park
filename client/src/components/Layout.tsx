@@ -222,12 +222,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-white/40">
-              &copy; {new Date().getFullYear()} Texoma Lakeside RV Park. All rights reserved.
-            </p>
-            <p className="text-xs text-white/40">
-              Cartwright, Oklahoma &middot; Lake Texoma
+          {/* SEO-rich footer bottom with local keywords */}
+          <div className="border-t border-white/10 pt-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+              <p className="text-xs text-white/40">
+                &copy; {new Date().getFullYear()} Texoma Lakeside RV Park. All rights reserved.
+              </p>
+              <p className="text-xs text-white/40">
+                Cartwright, Oklahoma &middot; Bryan County &middot; Lake Texoma Region
+              </p>
+            </div>
+            <p className="text-xs text-white/30 text-center max-w-3xl mx-auto leading-relaxed">
+              Texoma Lakeside RV Park provides affordable long-term RV sites near Lake Texoma in southeastern Oklahoma. Serving RV enthusiasts from the Dallas-Fort Worth metroplex, Durant, Denison, Sherman, and surrounding communities. Full hookup RV sites with water, sewer, and 20/30/50 amp electric near Burns Run West boat ramps.
             </p>
           </div>
         </div>

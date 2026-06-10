@@ -4,17 +4,25 @@
  * Internal linking to: FAQ, Lease & Rules, Fishing Guide, Long-Term Living, Home (contact)
  */
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import { MapPin, TreePine, Users, Heart, ArrowRight } from "lucide-react";
 
 export default function About() {
   return (
     <>
+      <SEOHead
+        title="About Texoma Lakeside RV Park | Family-Owned RV Park Near Lake Texoma, Oklahoma"
+        description="Learn about Texoma Lakeside RV Park, a family-owned RV community in Cartwright, Oklahoma. Oversized 33x50 pads, full hookups, 1 mile to Burns Run West boat ramps. Affordable long-term RV living on Lake Texoma."
+        canonical="https://www.texomalakesidervpark.com/about"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/lake_texoma_aerial-PNUp3Qe3iycRqqxGRQR8Bp.png"
+        ogImageAlt="Aerial view of Lake Texoma showing blue-green water and forested coves near Cartwright Oklahoma"
+      />
       {/* Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/lake_aerial_view_22624da0.jpg"
-            alt="Aerial view of Lake Texoma near Texoma Lakeside RV Park"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/lake_texoma_aerial-oMig63C56e4Ncn4L3KJ27z.webp"
+            alt="Aerial drone view of Lake Texoma showing blue-green water, forested coves, and boats near Burns Run West in southeastern Oklahoma"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[var(--color-navy)]/80" />

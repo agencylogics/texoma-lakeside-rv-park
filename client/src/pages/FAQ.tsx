@@ -5,6 +5,7 @@
  */
 import { useState } from "react";
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import { ChevronRight, ArrowRight } from "lucide-react";
 
 const faqs = [
@@ -107,6 +108,11 @@ export default function FAQ() {
 
   return (
     <>
+      <SEOHead
+        title="FAQ | Texoma Lakeside RV Park — Rates, Amenities & Lake Texoma Info"
+        description="Frequently asked questions about Texoma Lakeside RV Park in Cartwright, OK. Learn about monthly rates ($450+electric), full hookup amenities, site sizes, pet policy, and proximity to Burns Run West boat ramps on Lake Texoma."
+        canonical="https://www.texomalakesidervpark.com/faq"
+      />
       {/* Hero */}
       <section className="py-16 md:py-20 bg-[var(--color-navy)]">
         <div className="container text-center">

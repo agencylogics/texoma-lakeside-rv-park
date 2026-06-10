@@ -3,17 +3,25 @@
  * Lake Texoma Fishing & Boating Guide — SEO/GEO content page
  */
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import { Fish, Anchor, Sun, Thermometer, MapPin, ArrowRight } from "lucide-react";
 
 export default function FishingGuide() {
   return (
     <>
+      <SEOHead
+        title="Lake Texoma Fishing & Boating Guide | Best Fishing Near Burns Run West | Texoma Lakeside RV Park"
+        description="Complete guide to fishing and boating on Lake Texoma near Cartwright, Oklahoma. Striped bass, largemouth bass, catfish, and crappie fishing tips. Burns Run West boat ramp access just 1 mile from Texoma Lakeside RV Park."
+        canonical="https://www.texomalakesidervpark.com/lake-texoma-fishing-boating-guide"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/fishing_lake_texoma-UoPHkBESYqUBWpUEsEgocz.png"
+        ogImageAlt="Bass fisherman casting a line from a boat on Lake Texoma at golden hour"
+      />
       {/* Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/fishing_boat_ramp_f32d0fcb.jpg"
-            alt="Bass boat being launched at Burns Run West boat ramp on Lake Texoma"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/fishing_lake_texoma-5QAdnBg7ckY4JnzRRpS83i.webp"
+            alt="Professional bass fisherman casting from a boat on Lake Texoma at golden hour near Burns Run West boat ramps in Oklahoma"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[var(--color-navy)]/75" />

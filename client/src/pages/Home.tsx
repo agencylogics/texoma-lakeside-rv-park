@@ -4,6 +4,7 @@
  */
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import {
   Droplets, Zap, Wifi, Trash2, Car, Ruler,
   Anchor, Fish, TreePine, MapPin, Clock, Shield,
@@ -29,6 +30,11 @@ function useInView(threshold = 0.15) {
 export default function Home() {
   return (
     <>
+      <SEOHead
+        title="Texoma Lakeside RV Park | Long-Term RV Sites Near Lake Texoma | Cartwright, OK"
+        description="Affordable long-term RV park in Cartwright, Oklahoma near Lake Texoma. Full hookups, oversized 33x50 pads, 20/30/50 amp service, free WiFi, and 1 mile to Burns Run West boat ramps. Monthly rates from $450. Limited spots available."
+        canonical="https://www.texomalakesidervpark.com"
+      />
       <HeroSection />
       <UrgencyBanner />
       <StepsSection />
@@ -52,8 +58,8 @@ function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/manus-storage/hero_sunset_lake_a779a567.jpg"
-          alt="Stunning sunset over Lake Texoma with RVs parked along the shoreline and a fishing boat at the dock"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/hero_lake_texoma_sunset-BfZqFudzpeUkqT9C67gF8W.webp"
+          alt="Golden sunset over Lake Texoma with a bass boat docked at a wooden pier framed by mature oak trees in Cartwright Oklahoma"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-navy)]/90 via-[var(--color-navy)]/60 to-transparent" />
@@ -241,8 +247,8 @@ function AmenitiesSection() {
 
           <div className="relative">
             <img
-              src="/manus-storage/rv_pad_premium_45fbafa0.jpg"
-              alt="Premium RV site with full hookups, gravel pad, shade trees, and lake view at Texoma Lakeside RV Park"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/rv_site_full_hookup-frGVT6ABQo5ywkWoVRYzwJ.webp"
+              alt="Spacious full-hookup RV site with gravel pad and mature shade trees at Texoma Lakeside RV Park in Cartwright Oklahoma"
               className="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]"
             />
             <div className="absolute -bottom-4 -left-4 bg-[var(--color-amber)] text-[var(--color-navy)] px-5 py-3 rounded-lg shadow-lg">
@@ -274,8 +280,8 @@ function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img
-              src="/manus-storage/lake_aerial_view_22624da0.jpg"
-              alt="Aerial view of Lake Texoma showing the beautiful blue-green water, coves, and surrounding forests near Cartwright Oklahoma"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/lake_texoma_aerial-oMig63C56e4Ncn4L3KJ27z.webp"
+              alt="Aerial drone view of Lake Texoma showing blue-green water, forested coves, and boats near Burns Run West in southeastern Oklahoma"
               className="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]"
             />
           </div>
@@ -319,8 +325,8 @@ function LifestyleSection() {
     <section className="relative py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/manus-storage/lifestyle_campfire_145e1d7c.jpg"
-          alt="Couple enjoying a campfire evening at their RV site with string lights and American flag"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/campfire_evening_rv-dktbV5nxrXbvZmsmHxqeBn.webp"
+          alt="Couple relaxing by a campfire at their lakeside RV site with string lights and fifth wheel at dusk near Lake Texoma"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[var(--color-navy)]/70" />
@@ -572,8 +578,8 @@ function ContactSection() {
 
             <div className="mt-10">
               <img
-                src="/manus-storage/fishing_boat_ramp_f32d0fcb.jpg"
-                alt="Boat being launched at Burns Run West boat ramp on Lake Texoma near Texoma Lakeside RV Park"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/fishing_lake_texoma-5QAdnBg7ckY4JnzRRpS83i.webp"
+                alt="Bass fisherman casting a line from a boat on Lake Texoma at golden hour near Burns Run West boat ramps"
                 className="rounded-xl shadow-lg w-full object-cover aspect-video opacity-80"
               />
             </div>

@@ -3,17 +3,25 @@
  * Long-Term RV Living on Lake Texoma — SEO/GEO content page
  */
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import { Home, DollarSign, MapPin, Shield, Users, Leaf, ArrowRight } from "lucide-react";
 
 export default function LongTermLiving() {
   return (
     <>
+      <SEOHead
+        title="Long-Term RV Living on Lake Texoma | Affordable Monthly RV Sites | Texoma Lakeside RV Park"
+        description="Discover affordable long-term RV living near Lake Texoma in Cartwright, Oklahoma. Full hookup sites from $450/month, oversized pads, free WiFi, and 1 mile to Burns Run West boat ramps. Perfect for retirees, remote workers, and fishing enthusiasts."
+        canonical="https://www.texomalakesidervpark.com/long-term-rv-living-lake-texoma"
+        ogImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/campfire_evening_rv-mKwSgkV7Uzmzoy6dPpuhQb.png"
+        ogImageAlt="Couple relaxing by campfire at their lakeside RV site near Lake Texoma"
+      />
       {/* Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/lifestyle_campfire_145e1d7c.jpg"
-            alt="Evening campfire scene at an RV park with string lights and comfortable outdoor living"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663364711481/KY9zpHWoeCd25Pm76rdm47/campfire_evening_rv-dktbV5nxrXbvZmsmHxqeBn.webp"
+            alt="Couple enjoying a peaceful evening by the campfire at their lakeside RV site with string lights and fifth wheel near Lake Texoma"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[var(--color-navy)]/80" />
