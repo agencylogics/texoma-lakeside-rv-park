@@ -8,4 +8,4 @@
 - [x] Backend tRPC public mutation that forwards form data to Zapier webhook URL
 - [x] Frontend contact form wired to backend tRPC mutation with loading/success/error states
 - [x] Owner notification on new contact form submission via notifyOwner helper
-- [ ] Export the current project source to the connected GitHub account
+- [x] Export the current project source to the connected GitHub account
